@@ -1,0 +1,556 @@
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframes, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	veritcal-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.25;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ALL TEXT ABOVE THIS LINE IS THE RESET */
+
+html{
+	min-height: 100%;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+@font-face{
+	font-family: 'Fairview_Regular';
+	src: url('fairview_regular-webfont.eot');
+	src: url('fairview_regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fairview_regular-webfont.woff') format('woff'),
+	     url('fairview_regular-webfont.ttf') format('truetype'),
+	     url('fairview_regular-webfont.svg#webfont') format('svg');
+
+}
+
+body{
+	/*font: 16px/30px "Helvetica", sans-serif;*/
+			font-family: 'Merriweather', serif;
+			font-size: 95%;
+
+	color:#333;
+	/*background:url(paper_fibers.png);*/
+	background: #fff;
+	font-weight: 100;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo{
+	position: fixed;
+	top: 0px;
+	left: 30px;
+	font-size: 250%;
+	font-family: 'Fairview_Regular', Helvetica, sans-serif;
+	color: #ddd;
+	z-index: 50;
+}
+
+header{
+	position: fixed;
+	top:0px;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	height: 50px;
+	z-index: 10;
+	border-bottom: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	font-weight: 100;
+}
+
+nav{
+	display: inline-block;
+	line-height: 0px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/*this is for the web section*/
+.webDescriptionLeft{
+	position: relative;
+	width: 382px;
+	height: 248px;
+	float: left;
+	clear: left;
+	top: 50px;
+	margin-top: 50px;
+	font-weight: 100;
+	text-align: justify;
+	overflow: scroll;
+	/*background-color: #f7f7f7;*/
+	border-right: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	border-radius: 15px;
+}
+
+.webDescriptionLeft p {
+	width: 95%;
+	font-size: 14px;
+}
+
+.webProjectRight{
+	position: relative;
+	width: 382px;
+	height: 100%;
+	float: right;
+	clear: right;
+	top: 50px;
+	/*background-color: red;*/
+	margin-top: 50px;
+}
+
+#webProjects{
+	width: 800px;
+	min-height: 100%;
+	background-color: green;
+	line-height: 175%;
+}
+
+.webProjectLeft{
+	position: relative;
+	width: 382px;
+	height: 100%;
+	float: left;
+	clear: left;
+	top: 50px;
+	/*background-color: red;*/
+}
+
+.webDescriptionRight{
+	position: relative;
+	width: 30%;
+	height: 150px;
+	float: right;
+	clear: right;
+	right: 15%;
+	background-color: blue;
+	top: 50px;
+	margin-top: 50px;
+}
+
+#firstDescription{
+	top:50px;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+
+#firstProject{
+	top: 50px;
+}
+
+h3{
+	text-align: center;
+	color:#444;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+.webImage{
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 25px;
+	border-right: solid;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	border-radius: 15px;
+}
+/*this ends the web section*/
+
+/*this is for the links for specific photo projects*/
+#photolinks{
+	position: fixed;	
+	top:51px;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: #fff;
+	z-index:10;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space: nowrap;
+	font-size: 12px;	
+}
+
+#photolinks ul li{
+	display: inline-block;
+	line-height: 0px;
+	vertical-align: middle;
+}
+/*this ends the section for specific photo projects*/
+ 
+.defaultBorder{
+	border-right:solid;
+	border-bottom: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 15px;
+}
+
+.borderBottom{
+	border-bottom: solid;
+	border-color: #ddd;
+	border-width: 1px;
+	border-radius: 15px;
+}
+
+
+
+.borderRight{
+	border-right:solid;
+}
+
+ h2{
+ 	width: 90%;
+ 	text-align: center;
+	color:#666;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-weight: 100;
+	font-size: 30px;
+	line-height: 125%;
+ }
+ #thoughtsContainer{
+ 		position: relative;
+		width: 95%;
+		height: 100%;
+		top: 100px;
+		padding-bottom: 25px;
+		font-family: 'Merriweather', serif;
+		font-size: 115%;
+		line-height: 220%;
+		color: #3c3c3c;
+	}
+
+.translucent{
+	opacity: .5;
+}
+#content{
+	width: 100%;
+	position: relative;
+	clear:both;
+	background-color: #fff;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+.thoughtsImage{
+	height: auto;
+	max-width: 90%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+li{
+	padding-top: 2%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	display: inline-block;
+}
+
+img{
+	display: block;
+	min-width: 90%;
+	height:auto;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a{text-decoration: none;}
+a:link{color: #4d4d4d;}
+a:visited{color: #4d4d4d;}
+a:active{color: #000;}
+a:hover{color: #000; cursor: pointer; text-decoration: underline;}
+
+.active{
+	color: #938fb1;
+}
+
+
+article{
+	width:90%;
+	text-align: justify;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: solid;
+	border-width: 4px;
+	border-color: #f7f7f7;
+	border-radius: 15px;
+}
+
+article p {
+	margin-top: 15px;
+	font-size: 95%;
+}
+
+#mainsection{
+	position: relative;
+	margin-top:150px;
+	width: 100%;
+	z-index: 4;
+	height: auto;
+}
+#mainimageid{
+	display: block;
+	min-width:200px;
+	height:auto;
+	box-shadow: 5px 5px 25px #b3b3b3;
+
+}
+
+#backarrow{
+	display: block;
+	position: fixed;
+	clear: left;
+	top: 630px;;
+	left:50px;
+	font-size: 25px;
+	color: #ccc;
+}
+#forwardarrow{
+	display: block;
+	position: fixed;
+	clear: left;
+	top:630px;;
+	left:200px;
+	font-size: 25px;
+	color: #ccc;
+}
+#imageCount{
+	display: block;
+	position: fixed;
+	width: 100px;
+	text-align: center;
+	top: 630px;;
+	left: 80px;
+	font-size: 20px;
+	color: #ccc;
+}
+#aboutProject{
+	display:block;
+	position:fixed;
+	top: 635px; 
+	left: 250px;
+	height: 20px;
+	width: 85px;
+	color:#c4c4c4;
+	z-index:12;
+	text-align:center;
+	cursor:pointer;
+	line-height:20px;
+	vertical-align:center;
+	text-shadow: 0 1px 0 white;
+	padding: 2px 5px;
+	font-weight: 100;
+	font-size: 90%;
+	
+}
+
+em{
+	font-style: italic;
+}
+#closeProject{
+	display:none;
+	position: fixed;
+	top: 635px; 
+	left: 250px;
+	height: 20px;
+	width: 85px;
+	color:#c4c4c4;
+	z-index:10;
+	text-align:center;
+	cursor:pointer;
+	line-height:20px;
+	vertical-align:center;
+	text-shadow: 0 1px 0 white;
+	padding: 2px 5px;
+	font-weight: 100;
+		font-size: 90%;
+
+}
+
+#projectInfo{
+	display: none;
+	position: absolute;
+	left:10%;
+	top: 10%;
+	height: 80%;
+	width: 80%;
+	text-align: justify;
+	z-index: 2;
+	overflow-y:scroll; 
+	font-weight: 100;
+}
+#projectInfo p{
+	margin-bottom: 20px;
+	line-height: 200%;
+}
+
+/*for the info page*/
+
+
+
+
+/*end of info page*/
+
+#contactContainer{
+	position: relative;
+	width: 70%;
+	height: 100%;
+	top: 150px;
+}
+
+#infoHTML{
+	background: url(background2.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+
+
+#contactInfo{
+	position: fixed;
+	width: 60%;
+	height: auto;
+	display: block;
+	background-color: #ffffff;
+	opacity: 0.9;
+	top: 200px;
+	margin-left: 20%;
+	font-size: 115%;
+	line-height: 175%;
+	border-radius: 15px;
+}
+
+
+#contactInfo ul li{
+	display: block;
+}
+#contactInfo p{
+	width: 95%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+#comingSoon{
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	width: 50%;
+	text-align: left;
+	height: auto;
+	position: relative;
+	top:300px;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+}
+#blah{
+	background-color: black;
+}
+
+@media only screen and (min-width: 700px){
+	#mainsection{width: 700px;}
+}
+@media only screen and (min-width: 1019px){
+		#photolinks{
+		position: fixed;
+		top:150px;
+		width: 225px;
+		height: auto;
+		text-align: left;
+		background: #fff;
+		z-index:10;
+		font-size: 75%;
+		margin-left: 20px;
+		box-shadow: none;
+		padding:5px;
+	}
+	@-moz-document url-prefix() {
+    #photolinks {
+        overflow-x:hidden;
+    }
+}
+		#photolinks ul li{
+		line-height: 30px;
+		vertical-align: middle;
+		display:block;
+	}
+		#mainsection{
+			margin-left: 25%;
+	}
+	#thoughtsContainer{
+		width: 70%;
+	}
+	#backarrow{
+		display: block;
+		top:500px;
+		left:50px;
+	}
+	#forwardarrow{
+		display: block;
+		top:500px;
+		left:200px;
+	}
+	#aboutProject{
+		left: 85px;
+		top:550px;
+	}
+	#closeProject{
+		left: 85px;
+		top:550px;
+	}
+	#imageCount{
+		top: 502px;
+		left: 80px;
+	}
+	h2{
+		width: 60%;
+	}
+}
+
+
+
+

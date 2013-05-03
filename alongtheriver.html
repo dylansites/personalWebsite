@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8"/>
+	<meta name = "description" content = "Dylan Sites is a photographer and web designer located in New York City. These photographs were taken along the Hudson River in the fall of 2009."/>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<script src = "js/mainjs.js" type = text/javascript></script>
+	<script src = "js/jquery-1.9.1.min.js"></script>
+	<title>Dylan Sites Photography -- Along The River</title>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body onLoad = "loadFolder('alongTheRiver/', 7)">
+	<div id = "container" class = "center">
+		<div id = "logo">
+			<p>Dylan Sites</p>
+		</div>
+		<header class = "center">
+			<nav role = "main navigation">
+				<ul>
+					<li><a href = "#"><span class = "active">Photography</span></a></li>
+					<li><a href = "thoughts.html">Thoughts</a></li>
+					<li><a href = "webdesign.html">Web</a></li>
+					<li><a href = "info.html">Info</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id = "photolinks" class = "borderBottom">
+			<ul>
+				<li><a href = "photography.html">In Retrospect; Everything Seemed Fine</a></li>
+				<li><a href = "#"><span class = "active">Along The River</span></a></li>
+				<li><a href = "ilovedyoufirst.html">I Loved You First</a></li>
+			</ul>
+		</div>
+		<div id = "backarrow" onClick = "prevImage()" onMouseOver="" style = "cursor: pointer;"><p>&lt;</p></div>
+		<div id = "imageCount"><p><span id = "countChange">1 </span>/ 7</p></div>
+		<div id = "forwardarrow" onClick = "nextImage()" onMouseOver="" style = "cursor: pointer;"><p>&gt;</p></div>
+		<div id = "aboutProject" class = "defaultBorder" onClick = "showProjectInfo()"><p>Project Info</p></div>
+		<div id = "closeProject" class = "defaultBorder" onClick = "hideProjectInfo()"><p>Close Info</p></div>
+		<div id = "mainsection" class = "center">
+			<div id = "projectInfo">
+				<p><em>Along The River</em> is a small collection of black and white photographs taken within and beside the Metro North train as it made it's journey north alongside the Hudson River in the fall of 2009. The majority of these images were taken in the late afternoon sun, right before sunset. If nothing else, this project provided an open space, both geographically and mentally, in which I was able to reflect on the new life in Manhattan that I was hesitant to embark upon.</p>
+			</div>
+			<img id = "mainimageid" class = "center" src = "images/alongTheRiver/1.jpg"/>
+		</div>
+	</div>
+</body>
+
+</html>
