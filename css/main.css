@@ -474,6 +474,19 @@ em{
 	text-align: justify;
 }
 
+.socialLinks{
+	position: relative;
+	min-width: 24px;
+	height: 24px;
+	background-color: #aaa;
+	float: left;
+	padding: 5px;
+	border-radius: 5px;
+	margin-left: 2.5%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 #comingSoon{
 	font-size: 30px;
 	background-color: black;
