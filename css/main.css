@@ -97,6 +97,27 @@ nav{
 	bottom: 5px;
 }
 
+#photolinks{
+	position: fixed;	
+	top:51px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background: #fff;
+	z-index:10;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	white-space: nowrap;
+	font-size: 12px;	
+}
+
+#photolinks ul li{
+	position: relative;
+	display: inline-block;
+	bottom: 10px;
+	width: auto;
+}
+
 /*this is for the web section*/
 .webDescriptionLeft{
 	position: relative;
@@ -193,25 +214,7 @@ h3{
 /*this ends the web section*/
 
 /*this is for the links for specific photo projects*/
-#photolinks{
-	position: fixed;	
-	top:51px;
-	width: 100%;
-	height: auto;
-	text-align: center;
-	background: #fff;
-	z-index:10;
-	overflow-x:scroll;
-	overflow-y:hidden;
-	white-space: nowrap;
-	font-size: 12px;	
-}
 
-#photolinks ul li{
-	position: relative;
-	display: inline-block;
-	bottom: 10px;
-}
 /*this ends the section for specific photo projects*/
  
 .defaultBorder{
@@ -259,6 +262,7 @@ h3{
 
 .translucent{
 	opacity: .5;
+	filter: alpha(opacity = 50);
 }
 #content{
 	width: 100%;
@@ -418,20 +422,12 @@ em{
 	width: 80%;
 	text-align: justify;
 	z-index: 2;
-	overflow-y:scroll; 
 	font-weight: 100;
 }
 #projectInfo p{
 	margin-bottom: 20px;
 	line-height: 200%;
 }
-
-/*for the info page*/
-
-
-
-
-/*end of info page*/
 
 #contactContainer{
 	position: relative;
@@ -457,6 +453,7 @@ em{
 	display: block;
 	background-color: #ffffff;
 	opacity: 0.9;
+	filter: alpha(opacity=90);
 	top: 200px;
 	margin-left: 10%;
 	font-size: 115%;
